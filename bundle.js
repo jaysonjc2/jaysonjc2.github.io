@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "abbe9609084c9054f5a4"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8727fb666f66696bc922"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -37545,7 +37545,7 @@ var Movies = function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch("http://demo9514897.mockable.io/categories").then(function (response) {
+      fetch("https://demo9514897.mockable.io/categories").then(function (response) {
         console.log(response);
         return response.json();
       }).then(function (json) {
@@ -37553,7 +37553,7 @@ var Movies = function (_Component) {
         _this2.setState({ genres: json });
       });
 
-      fetch("http://demo9514897.mockable.io/movies").then(function (response) {
+      fetch("https://demo9514897.mockable.io/movies").then(function (response) {
         console.log(response);
         return response.json();
       }).then(function (json) {
